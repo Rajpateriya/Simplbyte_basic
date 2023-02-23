@@ -682,3 +682,8 @@ html {
 }
 }
 
+@media (max-width: 600px) {
+    .box{
+        height: auto !important;
+    }
+}
