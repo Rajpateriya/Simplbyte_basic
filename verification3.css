@@ -1,0 +1,129 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* text-transform: capitalize; */
+    
+    
+}
+div{
+    display: block;
+}
+
+header {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 4rem;
+    position: fixed;
+    background: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.header .logo {
+    justify-content: center;
+    font-size: 2rem;
+    color: rgb(247, 242, 242);
+    display: flex;
+    align-items: center;
+   
+}
+
+.header .logo img {
+    /* padding-top:2rem; */
+    height: 3rem;
+    padding-right: 5px;
+}
+
+.header .logo {
+    font-size: 2.0rem;
+    color: rgb(243, 243, 245);
+    text-decoration: none;
+}
+.container{position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(125, 11, 224), #8d5bca);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.contentBox {
+    text-align: center;
+    /* padding: 20px; */
+    /* padding-top: 36px; */
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: 600px;
+    height: 400px;
+    background: rgb(251, 148, 205);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(248, 246, 246, 0.1);
+}
+.contentBox .content {
+    height: auto;
+    text-align: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    /* padding: 20px 0px; */
+    /* padding-top: 36px; */
+    margin-bottom: 3rem;
+}
+.badge {
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    
+}
+/* .popup .badge {
+    width: 300px;
+    height: 300px;
+    margin: 0 4.5rem;
+    box-shadow: 1px 2px 3px 4px rgb(12 12 12 / 20%);
+    animation: ripple 2s;
+} */
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0px 0px 10px;
+    color: #272626;
+}
+.contentBox .content p {
+    font-size: 1.25em;
+    font-weight: 300;
+    padding: 12px 2px;
+    color: rgb(33, 33, 32);
+}
+
+@media (max-width: 767px){
+    html{
+        font-size: 80%;
+    }
+    .contentBox {
+        width: 300px;
+        height: auto;
+        flex-direction: column;
+        /* padding: 20px 0px;
+        padding-top: 36px; */
+    }
+    .contentBox .content {
+        height: auto;
+        text-align: center;
+        /* padding: 20px 0px;
+        padding-top: 36px; */
+    }
+    .popup{
+        padding-top: 90px;
+    }
+}
